@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-day-8/static/css/main.7e33c2c5.chunk.css",
-    "main.js": "/react-day-8/static/js/main.baae50f3.chunk.js",
-    "main.js.map": "/react-day-8/static/js/main.baae50f3.chunk.js.map",
+    "main.css": "/react-day-8/static/css/main.67019a04.chunk.css",
+    "main.js": "/react-day-8/static/js/main.84cb8b13.chunk.js",
+    "main.js.map": "/react-day-8/static/js/main.84cb8b13.chunk.js.map",
     "runtime-main.js": "/react-day-8/static/js/runtime-main.6bfb6fb2.js",
     "runtime-main.js.map": "/react-day-8/static/js/runtime-main.6bfb6fb2.js.map",
-    "static/js/2.0283af4a.chunk.js": "/react-day-8/static/js/2.0283af4a.chunk.js",
-    "static/js/2.0283af4a.chunk.js.map": "/react-day-8/static/js/2.0283af4a.chunk.js.map",
+    "static/js/2.5e38332a.chunk.js": "/react-day-8/static/js/2.5e38332a.chunk.js",
+    "static/js/2.5e38332a.chunk.js.map": "/react-day-8/static/js/2.5e38332a.chunk.js.map",
     "index.html": "/react-day-8/index.html",
-    "static/css/main.7e33c2c5.chunk.css.map": "/react-day-8/static/css/main.7e33c2c5.chunk.css.map",
-    "static/js/2.0283af4a.chunk.js.LICENSE.txt": "/react-day-8/static/js/2.0283af4a.chunk.js.LICENSE.txt"
+    "static/css/main.67019a04.chunk.css.map": "/react-day-8/static/css/main.67019a04.chunk.css.map",
+    "static/js/2.5e38332a.chunk.js.LICENSE.txt": "/react-day-8/static/js/2.5e38332a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6bfb6fb2.js",
-    "static/js/2.0283af4a.chunk.js",
-    "static/css/main.7e33c2c5.chunk.css",
-    "static/js/main.baae50f3.chunk.js"
+    "static/js/2.5e38332a.chunk.js",
+    "static/css/main.67019a04.chunk.css",
+    "static/js/main.84cb8b13.chunk.js"
   ]
 }
