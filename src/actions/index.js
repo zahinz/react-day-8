@@ -16,7 +16,7 @@ export const searchMovie = (data) => (dispatch) => {
 
   try {
     axios
-      .get(`https://www.omdbapi.com/?apikey=8aea6d6b&s=${data}&page=2`)
+      .get(`https://www.omdbapi.com/?apikey=8aea6d6b&s=${data}&page=1`)
       .then((res) => {
         // console.log("res...", res.data.Search);
         if (res.status === 200 && res.data.Response === "True") {

@@ -6,7 +6,8 @@ import {
 
 const defaultState = () => ({
   isLoading: false,
-  data: [{}],
+  page: 0,
+  data: [],
   error: null,
 });
 
@@ -19,7 +20,7 @@ const searchMovieReducer = (state, action) => {
     case SEARCH_MOVIE:
       return {
         isLoading: true,
-        data: [{}],
+        data: action.payload,
         error: null,
       };
 
@@ -33,7 +34,7 @@ const searchMovieReducer = (state, action) => {
     case SEARCH_MOVIE_FAILED:
       return {
         isLoading: false,
-        data: [{}],
+        data: [],
         error: action.error,
       };
 

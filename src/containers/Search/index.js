@@ -28,7 +28,7 @@ class Search extends React.Component {
   render() {
     return (
       <div className="bg-blue-600 h-screen w-full flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mb-10">
           <div className="font-extrabold text-white text-4xl mb-5 flex items-center">
             Movie Magic{" "}
             <span className="ml-4">
@@ -37,15 +37,15 @@ class Search extends React.Component {
           </div>
           <form
             onSubmit={(e) => this.submitSearch(e)}
-            className="flex justify-between items-center"
+            className="flex justify-between items-center bg-white rounded"
           >
             <input
-              className="text-gray-800 p-2 rounded w-96"
+              className="text-gray-800 p-2 rounded w-96 focus:outline-none"
               type="text"
               ref={(e) => (this._searchInput = e)}
             />
-            <button className="text-white ml-4 text-lg">
-              <BsSearch size="1.5em" />
+            <button className="text-blue-600 pr-4 text-lg">
+              <BsSearch size="1em" />
             </button>
           </form>
         </div>

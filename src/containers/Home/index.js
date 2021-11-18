@@ -7,25 +7,28 @@ import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      movieList: [],
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   console.log(this.props);
+  //   this.state = {
+  //     movieList: [],
+  //   };
+  // }
 
-  componentDidMount() {
-    const { movieData } = this.props;
-    this.setState({ movieList: movieData.data });
-    console.log({ movieData });
-  }
+  // componentDidMount() {
+  //   console.log(this.state);
+  //   const { movieData } = this.props;
+  //   // this.setState({ movieList: movieData.data });
+  //   // this.props.submitSearch("ironman");
+  //   console.log({ movieData });
+  // }
 
-  componentDidUpdate(prevProps) {
-    const { movieData } = this.props;
-    if (prevProps.movieData.isLoading && !movieData.isLoading) {
-      this.setState({ movieList: movieData.data });
-    }
-  }
+  // componentDidUpdate(prevProps) {
+  //   const { movieData } = this.props;
+  //   if (prevProps.movieData.isLoading && !movieData.isLoading) {
+  //     this.setState({ movieList: movieData.data });
+  //   }
+  // }
 
   submitSearch(e) {
     e.preventDefault();
@@ -34,7 +37,7 @@ class Home extends React.Component {
       return;
     }
     console.log(this._searchInput.value);
-    console.log(this.state.movieList);
+    // console.log(this.state.movieList);
     console.log("movie data", this.props.movieData.data);
     this.props.submitSearch(this._searchInput.value);
     this._searchInput.value = "";
@@ -65,11 +68,20 @@ class Home extends React.Component {
         </header>
 
         <div className="flex justify-center mt-12">
-          <div className="lg:w-3/5 md:w-4/5 sm:w-5/6 11/12 mt-10 flex flex-wrap justify-center">
+          <div className="lg:w-3/5 md:w-4/5 sm:w-5/6 11/12 mt-10 flex flex-wrap justify-start">
             {this.props.movieData.isLoading ? (
-              <MovieCardLoading />
+              <>
+                <MovieCardLoading />
+                <MovieCardLoading />
+                <MovieCardLoading />
+                <MovieCardLoading />
+                <MovieCardLoading />
+                <MovieCardLoading />
+                <MovieCardLoading />
+                <MovieCardLoading />
+              </>
             ) : (
-              this.state.movieList.map((list) => (
+              this.props.movieData.data.map((list) => (
                 <MovieCard
                   id={list.imdbID}
                   poster={list.Poster}
