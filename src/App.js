@@ -1,13 +1,15 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./containers/Home";
 import Details from "./containers/Details";
 
 function App() {
   return (
-    <Routes basename={process.env.PUBLIC_URL}>
-      <Route path="/details/:id" element={<Details />} />
-      <Route path="/" exact element={<Home />} />
-    </Routes>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Switch>
+        <Route path="/details/:id" component={Details} />
+        <Route path="/" exact component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
