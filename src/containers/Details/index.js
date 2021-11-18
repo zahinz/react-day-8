@@ -38,7 +38,7 @@ class Details extends React.Component {
             <img
               src={this.state.data.Poster}
               alt={`Poster of ${this.state.data.Title}`}
-              className="h-full object-cover"
+              className="h-full object-cover object-center"
             />
           </div>
           <div className="p-8 w-2/3">
