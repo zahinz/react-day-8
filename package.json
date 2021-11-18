@@ -2,7 +2,7 @@
   "name": "day8",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zahinz.github.io/react-day-8",
+  "homepage": "https://zahinz.github.io/react-day-8",
   "dependencies": {
     "@craco/craco": "^6.4.0",
     "@reduxjs/toolkit": "^1.6.2",
